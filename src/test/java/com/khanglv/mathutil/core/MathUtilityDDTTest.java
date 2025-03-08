@@ -27,5 +27,4 @@ class MathUtilityDDTTest {
         assertEquals(expectedResult, MathUtility.getFactorial(n));
     }
 
-
 }
