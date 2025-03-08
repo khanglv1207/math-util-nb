@@ -7,5 +7,5 @@
 * A CI (Continuous Integration) script to automatically check the quality of source code and deploy to a server
 *...
 
-### Connect me via lakhang1207@gmail.com
+### Connect me via khanglv1207@gmail.com
 #### &#169; 2025 vĩnh.khang
