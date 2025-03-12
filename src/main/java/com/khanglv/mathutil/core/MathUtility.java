@@ -19,23 +19,35 @@ public class MathUtility {
 
     //Code các test case để test hàm chạy đúng sai - thực hành tdd
     //😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊🤣🤣🤣🤣🤣🤣👍👍👍👍
-    public static long getFactorial(int n){
+//    public static long getFactorial(int n){
+//        if (n < 0 || n > 20) {
+//            //return -1;
+//            throw new IllegalArgumentException("Invalid n , n must be between 0 and 20");
+//        }
+//
+//        if (n==0){
+//            return 1;
+//        }
+//        //Khỏi viết else cho code nhìn đẹp
+//        //n bắt đầu từ 1
+//        //thuật toán con heo đất , nhân dồn , cộng dồn
+//        long result=1;
+//        for (int i =1;i<=n;i++){
+//            result*=i; //
+//        }
+//        return result;
+//    }result
+
+    // chuyển sang tính giai thừa bằng đệ quy, gọi lại chính mình với quy mô nhỏ hơn
+    // N! = N * (N - 1)
+    public static long getFactorial(int n) {
         if (n < 0 || n > 20) {
             //return -1;
             throw new IllegalArgumentException("Invalid n , n must be between 0 and 20");
         }
-
-        if (n==0){
+        if (n == 0 || n == 1) {
             return 1;
         }
-        //Khỏi viết else cho code nhìn đẹp
-        //n bắt đầu từ 1
-        //thuật toán con heo đất , nhân dồn , cộng dồn
-        long result=1;
-        for (int i =1;i<=n;i++){
-            result*=i; //
-        }
-        return result;
+        return n * getFactorial(n - 1);
     }
-
 }
