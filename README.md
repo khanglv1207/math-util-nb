@@ -1,3 +1,5 @@
+[![Math Utility Project (CI included) | © 2025 by vĩnh.khang](https://github.com/khanglv1207/math-util-nb/actions/workflows/ci-script.yml/badge.svg)](https://github.com/khanglv1207/math-util-nb/actions/workflows/ci-script.yml)
+
 # Welcome to Math Utility Repository
 
 ## You will find in this repo the following stuff:
